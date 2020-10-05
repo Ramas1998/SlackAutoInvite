@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join {% block title %} {{ team_name }}{% endblock %} on Slack! </title>
+    {% block css %}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+        <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }}>
+    {% endblock %}
+    {% block jquery %}
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+
+    {% block javascript %}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    {% endblock %}
+</body>
+</html>
