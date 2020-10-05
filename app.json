@@ -1,0 +1,21 @@
+{
+  "name": "SlackAutoInvite",
+  "description": "Automate user invites to your Slack channel!",
+  "repository": "https://github.com/TeAmp0is0N/SlackAutoInvite",
+  "keywords": ["python", "slack"],
+  "logo": "https://raw.githubusercontent.com/TeAmp0is0N/SlackAutoInvite/master/static/img/logo.png",
+  "env": {
+    "SLACK_API_TOKEN": {
+      "description": "Slack API Token",
+      "required": true
+    },
+    "SLACK_TEAM_ID": {
+      "description": "Your Slack Team Name",
+      "required": true
+    },
+    "FLASK_SECRET_KEY": {
+      "description": "Enter a random string",
+      "required": true
+    }
+  }
+}
