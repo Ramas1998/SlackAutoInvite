@@ -1,0 +1,4 @@
+Flask==0.10.1
+Flask-WTF==0.12
+gunicorn==19.3.0
+https://github.com/TeAmp0is0N/SlackAutoInvite/archive/master.zip
